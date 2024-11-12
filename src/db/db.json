@@ -1,0 +1,404 @@
+{
+  "cars": [
+    {
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": 2021,
+      "price": 41000,
+      "mileage": 10000,
+      "condition": "used",
+      "color": "black",
+      "images": ["link_to_mercedes1.jpg", "link_to_mercedes2.jpg"]
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "year": 2020,
+      "price": 55000,
+      "mileage": 5000,
+      "condition": "new",
+      "color": "white",
+      "images": ["link_to_mercedes3.jpg", "link_to_mercedes4.jpg"]
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "GLE",
+      "year": 2019,
+      "price": 60000,
+      "mileage": 20000,
+      "condition": "used",
+      "color": "silver",
+      "images": ["link_to_mercedes5.jpg", "link_to_mercedes6.jpg"]
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "GLA",
+      "year": 2022,
+      "price": 35000,
+      "mileage": 3000,
+      "condition": "new",
+      "color": "red",
+      "images": ["link_to_mercedes7.jpg", "link_to_mercedes8.jpg"]
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "S-Class",
+      "year": 2021,
+      "price": 90000,
+      "mileage": 1000,
+      "condition": "new",
+      "color": "blue",
+      "images": ["link_to_mercedes9.jpg", "link_to_mercedes10.jpg"]
+    },
+    {
+      "make": "BMW",
+      "model": "3 Series",
+      "year": 2022,
+      "price": 38000,
+      "mileage": 2000,
+      "condition": "new",
+      "color": "blue",
+      "images": ["link_to_bmw1.jpg", "link_to_bmw2.jpg"]
+    },
+    {
+      "make": "BMW",
+      "model": "X5",
+      "year": 2021,
+      "price": 65000,
+      "mileage": 15000,
+      "condition": "used",
+      "color": "gray",
+      "images": ["link_to_bmw3.jpg", "link_to_bmw4.jpg"]
+    },
+    {
+      "make": "BMW",
+      "model": "i4",
+      "year": 2022,
+      "price": 55000,
+      "mileage": 500,
+      "condition": "new",
+      "color": "white",
+      "images": ["link_to_bmw5.jpg", "link_to_bmw6.jpg"]
+    },
+    {
+      "make": "BMW",
+      "model": "Z4",
+      "year": 2020,
+      "price": 47000,
+      "mileage": 8000,
+      "condition": "used",
+      "color": "red",
+      "images": ["link_to_bmw7.jpg", "link_to_bmw8.jpg"]
+    },
+    {
+      "make": "BMW",
+      "model": "X3",
+      "year": 2021,
+      "price": 42000,
+      "mileage": 12000,
+      "condition": "used",
+      "color": "black",
+      "images": ["link_to_bmw9.jpg", "link_to_bmw10.jpg"]
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Camaro",
+      "year": 2021,
+      "price": 28000,
+      "mileage": 12000,
+      "condition": "used",
+      "color": "red",
+      "images": ["link_to_chevrolet1.jpg", "link_to_chevrolet2.jpg"]
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Malibu",
+      "year": 2022,
+      "price": 23000,
+      "mileage": 3000,
+      "condition": "new",
+      "color": "silver",
+      "images": ["link_to_chevrolet3.jpg", "link_to_chevrolet4.jpg"]
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "year": 2021,
+      "price": 29000,
+      "mileage": 8000,
+      "condition": "used",
+      "color": "black",
+      "images": ["link_to_chevrolet5.jpg", "link_to_chevrolet6.jpg"]
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Silverado",
+      "year": 2022,
+      "price": 40000,
+      "mileage": 5000,
+      "condition": "new",
+      "color": "blue",
+      "images": ["link_to_chevrolet7.jpg", "link_to_chevrolet8.jpg"]
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Traverse",
+      "year": 2020,
+      "price": 35000,
+      "mileage": 15000,
+      "condition": "used",
+      "color": "white",
+      "images": ["link_to_chevrolet9.jpg", "link_to_chevrolet10.jpg"]
+    },
+    {
+      "make": "Ford",
+      "model": "F-150",
+      "year": 2021,
+      "price": 40000,
+      "mileage": 10000,
+      "condition": "used",
+      "color": "black",
+      "images": ["link_to_ford1.jpg", "link_to_ford2.jpg"]
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang",
+      "year": 2022,
+      "price": 35000,
+      "mileage": 5000,
+      "condition": "new",
+      "color": "blue",
+      "images": ["link_to_ford3.jpg", "link_to_ford4.jpg"]
+    },
+    {
+      "make": "Ford",
+      "model": "Explorer",
+      "year": 2020,
+      "price": 33000,
+      "mileage": 12000,
+      "condition": "used",
+      "color": "silver",
+      "images": ["link_to_ford5.jpg", "link_to_ford6.jpg"]
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "year": 2021,
+      "price": 29000,
+      "mileage": 7000,
+      "condition": "new",
+      "color": "red",
+      "images": ["link_to_ford7.jpg", "link_to_ford8.jpg"]
+    },
+    {
+      "make": "Ford",
+      "model": "Ranger",
+      "year": 2019,
+      "price": 27000,
+      "mileage": 15000,
+      "condition": "used",
+      "color": "green",
+      "images": ["link_to_ford9.jpg", "link_to_ford10.jpg"]
+    },
+    {
+      "make": "Lamborghini",
+      "model": "Huracan",
+      "year": 2022,
+      "price": 250000,
+      "mileage": 2000,
+      "condition": "new",
+      "color": "yellow",
+      "images": ["link_to_lambo1.jpg", "link_to_lambo2.jpg"]
+    },
+    {
+      "make": "Lamborghini",
+      "model": "Aventador",
+      "year": 2021,
+      "price": 400000,
+      "mileage": 3000,
+      "condition": "used",
+      "color": "green",
+      "images": ["link_to_lambo3.jpg", "link_to_lambo4.jpg"]
+    },
+    {
+      "make": "Lamborghini",
+      "model": "Urus",
+      "year": 2022,
+      "price": 300000,
+      "mileage": 1000,
+      "condition": "new",
+      "color": "orange",
+      "images": ["link_to_lambo5.jpg", "link_to_lambo6.jpg"]
+    },
+    {
+      "make": "Lamborghini",
+      "model": "Gallardo",
+      "year": 2019,
+      "price": 220000,
+      "mileage": 15000,
+      "condition": "used",
+      "color": "black",
+      "images": ["link_to_lambo7.jpg", "link_to_lambo8.jpg"]
+    },
+    {
+      "make": "Lamborghini",
+      "model": "Sián",
+      "year": 2022,
+      "price": 500000,
+      "mileage": 200,
+      "condition": "new",
+      "color": "purple",
+      "images": ["link_to_lambo9.jpg", "link_to_lambo10.jpg"]
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "year": 2021,
+      "price": 25000,
+      "mileage": 5000,
+      "condition": "new",
+      "color": "black",
+      "images": ["link_to_toyota1.jpg", "link_to_toyota2.jpg"]
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2020,
+      "price": 22000,
+      "mileage": 12000,
+      "condition": "used",
+      "color": "blue",
+      "images": ["link_to_toyota3.jpg", "link_to_toyota4.jpg"]
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4",
+      "year": 2021,
+      "price": 28000,
+      "mileage": 8000,
+      "condition": "new",
+      "color": "silver",
+      "images": ["link_to_toyota5.jpg", "link_to_toyota6.jpg"]
+    },
+    {
+      "make": "Toyota",
+      "model": "Highlander",
+      "year": 2022,
+      "price": 34000,
+      "mileage": 3000,
+      "condition": "new",
+      "color": "white",
+      "images": ["link_to_toyota7.jpg", "link_to_toyota8.jpg"]
+    },
+    {
+      "make": "Toyota",
+      "model": "Tacoma",
+      "year": 2019,
+      "price": 35000,
+      "mileage": 15000,
+      "condition": "used",
+      "color": "red",
+      "images": ["link_to_toyota9.jpg", "link_to_toyota10.jpg"]
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "year": 2022,
+      "price": 23000,
+      "mileage": 2500,
+      "condition": "new",
+      "color": "gray",
+      "images": ["link_to_honda1.jpg", "link_to_honda2.jpg"]
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "mileage": 6000,
+      "condition": "used",
+      "color": "black",
+      "images": ["link_to_honda3.jpg", "link_to_honda4.jpg"]
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V",
+      "year": 2020,
+      "price": 29000,
+      "mileage": 7000,
+      "condition": "used",
+      "color": "silver",
+      "images": ["link_to_honda5.jpg", "link_to_honda6.jpg"]
+    },
+    {
+      "make": "Honda",
+      "model": "Pilot",
+      "year": 2021,
+      "price": 35000,
+      "mileage": 10000,
+      "condition": "used",
+      "color": "blue",
+      "images": ["link_to_honda7.jpg", "link_to_honda8.jpg"]
+    },
+    {
+      "make": "Honda",
+      "model": "HR-V",
+      "year": 2022,
+      "price": 23000,
+      "mileage": 3000,
+      "condition": "new",
+      "color": "red",
+      "images": ["link_to_honda9.jpg", "link_to_honda10.jpg"]
+    },
+    {
+      "make": "Audi",
+      "model": "A4",
+      "year": 2021,
+      "price": 39000,
+      "mileage": 4000,
+      "condition": "new",
+      "color": "white",
+      "images": ["link_to_audi1.jpg", "link_to_audi2.jpg"]
+    },
+    {
+      "make": "Audi",
+      "model": "Q5",
+      "year": 2020,
+      "price": 48000,
+      "mileage": 6000,
+      "condition": "used",
+      "color": "black",
+      "images": ["link_to_audi3.jpg", "link_to_audi4.jpg"]
+    },
+    {
+      "make": "Audi",
+      "model": "A6",
+      "year": 2022,
+      "price": 55000,
+      "mileage": 2000,
+      "condition": "new",
+      "color": "blue",
+      "images": ["link_to_audi5.jpg", "link_to_audi6.jpg"]
+    },
+    {
+      "make": "Audi",
+      "model": "Q7",
+      "year": 2019,
+      "price": 75000,
+      "mileage": 12000,
+      "condition": "used",
+      "color": "gray",
+      "images": ["link_to_audi7.jpg", "link_to_audi8.jpg"]
+    },
+    {
+      "make": "Audi",
+      "model": "TT",
+      "year": 2021,
+      "price": 58000,
+      "mileage": 1500,
+      "condition": "new",
+      "color": "red",
+      "images": ["link_to_audi9.jpg", "link_to_audi10.jpg"]
+    }
+  ]
+}
