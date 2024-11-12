@@ -11,7 +11,7 @@ export default function Navbar() {
           <GiCarWheel className="text-blue-500 text-3xl md:text-5xl hover:text-blue-600 transition-all active:animate-spin" />
         </Link>
         <h1 className="text-blue-500 text-xl font-bold md:text-3xl ">
-          D.Motors w
+          D.Motors
         </h1>
         <div className="flex items-center gap-x-7 md:gap-x-12">
           <Link to="/cart" className="flex items-center relative">
