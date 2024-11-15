@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <main className="border-b-2 border-blue-100">
+    <main className="border-b-2 border-blue-100 fixed top-0 left-0 right-0 w-full z-50 bg-white">
       <nav className="container w-full mx-auto flex items-center justify-between p-5 md:px-0">
         <Link to="/">
           <GiCarWheel className="text-blue-500 text-3xl md:text-5xl hover:text-blue-600 transition-all active:animate-spin" />
@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="flex items-center gap-x-7 md:gap-x-12">
           <Link to="/cart" className="flex items-center relative">
             <HiShoppingCart className="text-blue-500 text-2xl md:text-3xl hover:text-blue-600 transition-all active:translate-y-1" />
-            <span className="absolute -top-3 -right-3 text-blue-500 font-medium text-lg md:text-xl ">
+            <span className="absolute -top-3 -right-7 text-blue-500 font-medium text-lg md:text-xl ">
               0
             </span>
           </Link>

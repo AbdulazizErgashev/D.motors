@@ -233,9 +233,16 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <section className="container mx-auto mt-5 p-5 lg:px-0">
-        <div className="flex items-center justify-between text-blue-500 font-bold pb-3 border-b-2 border-blue-100">
+      <section className="container mx-auto mt-24 p-5 lg:px-0">
+        <div className="flex items-center justify-between text-blue-500 font-bold pb-3 border-b-2 border-blue-300">
           <h1 className="text-2xl">Home</h1>
+
+          <input
+            type="search"
+            placeholder="Search your dreamy car..."
+            className="border-2 border-blue-300 outline-none font-medium rounded-md placeholder:text-blue-300 focus:border-blue-500 py-1 px-10"
+          />
+
           <Link to="/shop">
             <button className="border-2 border-blue-500 py-1 px-3 rounded-md hover:bg-blue-100 active:translate-y-1 transition-all">
               Shop Now
@@ -266,24 +273,6 @@ export default function Home() {
             </button>
           </div>
 
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
-            {categories[activeCategoryIndex].cars.map((car, index) => (
-              <div
-                key={index}
-                className="border rounded-lg overflow-hidden shadow-lg"
-              >
-                <img
-                  src={car.image}
-                  alt={car.name}
-                  className="w-full h-40 object-cover"
-                />
-                <div className="p-3">
-                  <h3 className="text-lg font-semibold">{car.name}</h3>
-                </div>
-              </div>
-            ))}
-          </div> */}
-
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
             {categories[activeCategoryIndex].cars.map((car, index) => (
               <div
@@ -294,24 +283,33 @@ export default function Home() {
                 <div
                   className={`relative w-full h-full transition-transform duration-500 transform-style preserve-3d ${
                     flippedCards[index] ? "rotate-y-180" : ""
-                  } border rounded-lg overflow-hidden shadow-lg`}
+                  }`}
                 >
-                  <div className="absolute w-full h-full backface-hidden">
+                  {/* Front Side */}
+                  <div className="absolute w-full h-full backface-hidden bg-white border rounded-lg shadow-lg">
                     <img
                       src={car.image}
                       alt={car.name}
-                      className="w-full h-40 object-cover"
+                      className="w-full h-40 object-cover rounded-t-lg"
                     />
-
-                    <div className="p-3 bg-white">
+                    <div className="p-3">
                       <h3 className="text-lg font-semibold">{car.name}</h3>
                     </div>
                   </div>
 
-                  <div className="absolute w-full h-full bg-gray-200 text-gray-800 flex items-center justify-center rotate-y-180 backface-hidden p-3">
-                    <p className="text-lg font-semibold">
-                      More details about {car.name}
+                  {/* Back Side */}
+                  <div className="absolute w-full h-full bg-blue-500 border rounded-lg shadow-lg text-gray-800 flex flex-col items-center justify-center rotate-y-180 backface-hidden p-3">
+                    <p className="text-lg text-white font-semibold mb-3">
+                      Learn more about {car.name}!
                     </p>
+                    <Link to="/shop">
+                      <button
+                        className="px-4 py-2 text-blue-500 bg-white font-semibold rounded-lg shadow hover:bg-blue-600 hover:text-white transition-colors"
+                        onClick={() => console.log(`Shop Now for ${car.name}`)}
+                      >
+                        Shop Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
