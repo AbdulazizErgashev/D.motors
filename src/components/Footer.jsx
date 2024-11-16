@@ -7,14 +7,12 @@ import { AiFillInstagram, AiOutlineMail } from "react-icons/ai";
 
 export default function Footer() {
   useEffect(() => {
-    // Set view to Namangan, Uzbekistan coordinates
     const map = L.map("footerMap").setView([40.9983, 71.6726], 13);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
       attribution: "© OpenStreetMap",
     }).addTo(map);
 
-    // Add marker for Namangan location
     L.marker([40.9983, 71.6726])
       .addTo(map)
       .bindPopup("D.Motors Location - Namangan, Uzbekistan")
@@ -27,7 +25,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-blue-800 text-white py-12">
-      <div className="container mx-auto px-5 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <div className="max-w-[1400px] w-full mx-auto px-5 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-2xl font-bold mb-4">D.Motors</h1>
           <p className="text-sm text-gray-300 mb-6">
@@ -126,7 +124,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-center text-gray-500 text-sm mt-10">
+      <div className="text-center text-white text-sm mt-10">
         © {new Date().getFullYear()} D.Motors. All rights reserved.
       </div>
     </footer>

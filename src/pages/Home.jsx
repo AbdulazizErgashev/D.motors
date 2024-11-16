@@ -233,14 +233,14 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <section className="container mx-auto mt-24 p-5 lg:px-0">
-        <div className="flex items-center justify-between text-blue-500 font-bold pb-3 border-b-2 border-blue-300">
+      <section className="max-w-[1200px] w-full mx-auto mt-24 p-5 lg:px-0">
+        <div className="flex flex-wrap items-center justify-between gap-4 text-blue-500 font-bold pb-3 border-b-2 border-blue-300">
           <h1 className="text-2xl">Home</h1>
 
           <input
             type="search"
             placeholder="Search your dreamy car..."
-            className="border-2 border-blue-300 outline-none font-medium rounded-md placeholder:text-blue-300 focus:border-blue-500 py-1 px-10"
+            className="border-2 border-blue-300 outline-none font-medium rounded-md placeholder:text-blue-300 focus:border-blue-500 py-1 px-5 w-full sm:w-auto"
           />
 
           <Link to="/shop">
@@ -255,14 +255,14 @@ export default function Home() {
             Categories
           </h1>
 
-          <div className="flex justify-between items-center mt-5">
+          <div className="flex flex-wrap justify-between items-center mt-5 gap-3">
             <button
               onClick={prevCategory}
               className="p-2 bg-blue-500 text-white rounded-md"
             >
               Prev
             </button>
-            <h2 className="text-xl text-blue-500 font-bold">
+            <h2 className="text-xl text-blue-500 font-bold text-center flex-1">
               {categories[activeCategoryIndex].name}
             </h2>
             <button
@@ -293,7 +293,9 @@ export default function Home() {
                       className="w-full h-40 object-cover rounded-t-lg"
                     />
                     <div className="p-3">
-                      <h3 className="text-lg font-semibold">{car.name}</h3>
+                      <h3 className="text-lg text-blue-500 font-semibold">
+                        {car.name}
+                      </h3>
                     </div>
                   </div>
 
