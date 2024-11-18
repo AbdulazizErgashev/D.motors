@@ -88,6 +88,7 @@ import GmLyriq from "../assets/products/gm/Lyriq.jpg";
 export default function Home() {
   const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
   const [flippedCards, setFlippedCards] = useState({});
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleFlip = (index) => {
     setFlippedCards((prevState) => ({
@@ -231,6 +232,20 @@ export default function Home() {
     );
   };
 
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value.toLowerCase());
+  };
+
+  const filteredCars = searchQuery
+    ? categories.flatMap((category) =>
+        category.name.toLowerCase().includes(searchQuery.toLowerCase())
+          ? category.cars
+          : category.cars.filter((car) =>
+              car.name.toLowerCase().includes(searchQuery.toLowerCase())
+            )
+      )
+    : categories[activeCategoryIndex].cars;
+
   return (
     <main className="min-h-screen">
       <section className="max-w-[1200px] w-full mx-auto mt-24 p-5 lg:px-0">
@@ -241,6 +256,8 @@ export default function Home() {
             type="search"
             placeholder="Search your dreamy car..."
             className="border-2 border-blue-300 outline-none font-medium rounded-md placeholder:text-blue-300 focus:border-blue-500 py-1 px-5 w-full sm:w-auto"
+            value={searchQuery}
+            onChange={handleSearchChange}
           />
 
           <Link to="/shop">
@@ -255,26 +272,28 @@ export default function Home() {
             Categories
           </h1>
 
-          <div className="flex flex-wrap justify-between items-center mt-5 gap-3">
-            <button
-              onClick={prevCategory}
-              className="p-2 bg-blue-500 text-white rounded-md"
-            >
-              Prev
-            </button>
-            <h2 className="text-xl text-blue-500 font-bold text-center flex-1">
-              {categories[activeCategoryIndex].name}
-            </h2>
-            <button
-              onClick={nextCategory}
-              className="p-2 bg-blue-500 text-white rounded-md"
-            >
-              Next
-            </button>
-          </div>
+          {!searchQuery && (
+            <div className="flex flex-wrap justify-between items-center mt-5 gap-3">
+              <button
+                onClick={prevCategory}
+                className="p-2 bg-blue-500 text-white rounded-md"
+              >
+                Prev
+              </button>
+              <h2 className="text-xl text-blue-500 font-bold text-center flex-1">
+                {categories[activeCategoryIndex].name}
+              </h2>
+              <button
+                onClick={nextCategory}
+                className="p-2 bg-blue-500 text-white rounded-md"
+              >
+                Next
+              </button>
+            </div>
+          )}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
-            {categories[activeCategoryIndex].cars.map((car, index) => (
+            {filteredCars.map((car, index) => (
               <div
                 key={index}
                 className="w-full h-64 perspective"
@@ -285,7 +304,6 @@ export default function Home() {
                     flippedCards[index] ? "rotate-y-180" : ""
                   }`}
                 >
-                  {/* Front Side */}
                   <div className="absolute w-full h-full backface-hidden bg-white border rounded-lg shadow-lg">
                     <img
                       src={car.image}
@@ -299,7 +317,6 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Back Side */}
                   <div className="absolute w-full h-full bg-blue-500 border rounded-lg shadow-lg text-gray-800 flex flex-col items-center justify-center rotate-y-180 backface-hidden p-3">
                     <p className="text-lg text-white font-semibold mb-3">
                       Learn more about {car.name}!
